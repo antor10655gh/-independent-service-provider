@@ -6,10 +6,11 @@ import {
   useSignInWithGoogle,
   useSignInWithGithub,
 } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 
 const SocialLogin = () => {
-  const [signInWithGoogle, user] = useSignInWithGoogle();
-  const [signInWithGithub] = useSignInWithGithub();
+  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+  const [signInWithGithub] = useSignInWithGithub(auth);
   return (
     <div className="my-3 text-center">
       <div className="d-flex align-items-center">
