@@ -13,7 +13,9 @@ const Banner = () => {
         </div>
         <div className="col">
           <div className="banner-details">
-            <h1>Travel With Trawell</h1>
+            <h1>
+              Travel With <span style={{ color: "orange" }}>Trawell</span>
+            </h1>
             <p>
               Trawell is only for traveler. Because it's the one of the most
               popular travel company. The name and reputation of this company is
