@@ -1,4 +1,30 @@
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-size: 60px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #838383;
+}
+
+.explore-btn {
+  box-shadow: rgba(0, 0, 0, 0.692) 0px 3px 8px;
+  background-color: orange;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.explore-btn:hover {
+  background-color: #ff7300;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
 }

@@ -4,15 +4,15 @@ import banner from "../../images/banner/banner.png";
 
 const Banner = () => {
   return (
-    <div className="container">
-      <div className="row row-cols-1 row-cols-lg-2">
+    <div className="container py-2 py-lg-5">
+      <div className="row row-cols-1 row-cols-lg-2 pt-lg-5">
         <div className="col">
           <div className="banner">
             <img className="img-fluid" src={banner} alt="" />
           </div>
         </div>
         <div className="col">
-          <div className="banner-details">
+          <div className="banner-details p-3 p-lg-0">
             <h1>
               Travel With <span style={{ color: "orange" }}>Trawell</span>
             </h1>
@@ -25,8 +25,8 @@ const Banner = () => {
               the clients.So we hope you too can travel the place of your choice
               with us.
             </p>
-            <button>
-              <span>Explore</span>
+            <button className="explore-btn mt-lg-3">
+              <span className="px-2">Explore</span>
               <i class="fa-solid fa-angles-right"></i>
             </button>
           </div>
