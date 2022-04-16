@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="container-fluid footer">
       <div className="row row-cols-1 row-cols-lg-3 p-2 p-lg-4">
         <div className="col">
-          <div className="footer-left">
+          <div className="footer-left pt-4 pt-lg-0 text-center text-lg-start">
             <img src={logo} alt="" />
             <p className="text-justify mt-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,

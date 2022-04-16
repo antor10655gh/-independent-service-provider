@@ -1,0 +1,16 @@
+.login-btn {
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  background-color: #e47657;
+  transition: 0.5s;
+}
+
+.login-btn:hover {
+  color: #fff;
+  background-color: #e96540;
+}
+
+.just-form {
+  border: 1px solid gray;
+}
