@@ -2,13 +2,20 @@
   width: 100%;
   border: none;
   padding: 8px 0;
-  background-color: #e47657;
+  background-color: orange;
   transition: 0.5s;
 }
 
 .login-btn:hover {
   color: #fff;
-  background-color: #e96540;
+  background-color: #ff7300;
+}
+
+.login-btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #ff7300;
 }
 
 .just-form {
