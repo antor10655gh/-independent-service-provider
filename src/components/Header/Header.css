@@ -1,0 +1,16 @@
+.logOut-btn {
+  background-color: orange;
+  border: none;
+  padding: 5px 18px;
+}
+
+.logOut-btn:hover {
+  background-color: #ff7300;
+}
+
+.logOut-btn:focus {
+  background-color: #ff7300;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

@@ -6,7 +6,7 @@ import "./SignUp.css";
 
 const SignUp = () => {
   return (
-    <div className="container">
+    <div className="container py-2 py-lg-4">
       <div className="total-form mx-auto bg-white mt-4">
         <div className="just-form p-4">
           <header className="mb-4 text-start fw-bold">
