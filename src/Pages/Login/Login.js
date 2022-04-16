@@ -1,10 +1,15 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import SocialLogin from "./SocialLogin/SocialLogin";
 
 const Login = () => {
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
+  const navigate = useNavigate();
+
   return (
     <div className="container py-2 py-lg-4">
       <div className="total-form mx-auto bg-white mt-4">
