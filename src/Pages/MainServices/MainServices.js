@@ -1,9 +1,8 @@
 import React from "react";
 import useService from "../../hooks/useService/useService";
-import Service from "../Service/Service";
-import "./Services.css";
+import MainService from "../MainService/MainService";
 
-const Services = () => {
+const MainServices = () => {
   const [services, setServices] = useService();
   return (
     <div className="container py-3 py-lg-5">
@@ -20,22 +19,12 @@ const Services = () => {
         ></div>
       </header>
       <div className="row row-cols-1 row-cols-lg-3 g-4">
-        {services.slice(0, 3).map((service) => (
-          <Service key={service.id} service={service}></Service>
+        {services.map((service) => (
+          <MainService key={service.id} service={service}></MainService>
         ))}
-      </div>
-      <div className="row pt-5 text-center">
-        <div className="col">
-          <div className="more-service">
-            <button className="getMore-btn">
-              <span className="px-2">Get More</span>
-              <i class="fa-solid fa-angles-right"></i>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Services;
+export default MainServices;
