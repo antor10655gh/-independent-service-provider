@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const MainService = (props) => {
-  const { id, name, price, picture, shortDescription, time } = props.service;
+  const { id, name, price, picture, shortDescription, time } = props.packagee;
   const navigate = useNavigate();
 
   const handleCheckOut = () => {
@@ -30,7 +30,7 @@ const MainService = (props) => {
         </div>
         <div className="checkout-details d-flex justify-content-between align-items-center p-3 pb-4">
           <button onClick={handleCheckOut} className="checkout-btn">
-            Check Out <i class="fa-regular fa-credit-card"></i>
+            Book Now <i class="fa-regular fa-credit-card"></i>
           </button>
           <div>
             <i style={{ color: "orange" }} class="fa-regular fa-clock mx-1"></i>

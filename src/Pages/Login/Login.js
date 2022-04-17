@@ -82,7 +82,14 @@ const Login = () => {
                   <Form.Check type="checkbox" label="Remember me" />
                 </Form.Group>
                 <span>
-                  <p onClick={forgetHandle} style={{ color: "orange" }}>
+                  <p
+                    onClick={forgetHandle}
+                    style={{
+                      color: "orange",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                    }}
+                  >
                     Forget Password
                   </p>
                 </span>

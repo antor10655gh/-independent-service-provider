@@ -3,6 +3,7 @@ import "./Banner.css";
 import banner from "../../images/banner/banner.png";
 
 const Banner = () => {
+  const icon = "fa-solid fa-earth-americas";
   return (
     <div className="container py-2 py-lg-5">
       <div className="row row-cols-1 row-cols-lg-2 pt-lg-5">

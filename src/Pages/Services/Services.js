@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useService from "../../hooks/useService/useService";
+import usePackage from "../../hooks/useService/useService";
 import Service from "../Service/Service";
 import "./Services.css";
 
 const Services = () => {
-  const [services, setServices] = useService();
+  const [packages, setPackages] = usePackage();
 
   const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const Services = () => {
     <div className="container py-3 py-lg-5">
       <header className="text-center mb-4 mb-lg-5">
         <h2>
-          Our <span style={{ color: "orange" }}>Services</span>
+          Our <span style={{ color: "orange" }}>Packages</span>
         </h2>
         <div
           style={{
@@ -28,8 +28,8 @@ const Services = () => {
         ></div>
       </header>
       <div className="row row-cols-1 row-cols-lg-3 g-4">
-        {services.slice(0, 3).map((service) => (
-          <Service key={service.id} service={service}></Service>
+        {packages.slice(0, 3).map((packagee) => (
+          <Service key={packagee.id} packagee={packagee}></Service>
         ))}
       </div>
       <div className="row pt-5 text-center">

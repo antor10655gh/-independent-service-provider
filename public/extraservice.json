@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Affordable Hotels",
+    "icon": "fa-solid fa-hotel",
+    "description": "Officia veniam eiusmod sunt Lorem commodo non. Ex sunt ipsum ipsum consequat quis irure aliquip veniam dolor. Ipsum labore eiusmod velit proident Lorem reprehenderit Lorem."
+  },
+  {
+    "id": "2",
+    "name": "Food & Drinks",
+    "icon": "fa-solid fa-utensils",
+    "description": "Aliqua fugiat eu magna aliquip do culpa et proident minim qui sint excepteur. Aute commodo veniam consequat cupidatat ut do occaecat sunt consectetur."
+  },
+  {
+    "id": "3",
+    "name": "Safety Guide",
+    "icon": "fa-solid fa-bullhorn",
+    "description": "Non mollit in do est. Sunt reprehenderit eu cupidatat enim cupidatat esse minim sit. Nisi mollit adipisicing nostrud deserunt id nostrud quis et sint."
+  },
+  {
+    "id": "4",
+    "name": "Around The World",
+    "icon": "fa-solid fa-earth-asia",
+    "description": "Fugiat aute dolore velit qui ea Lorem mollit laboris do laborum aute id ullamco. Laboris non pariatur aute adipisicing esse commodo duis. Nostrud culpa officia tempor."
+  },
+  {
+    "id": "5",
+    "name": "Fatest Travel",
+    "icon": "fa-solid fa-plane",
+    "description": "Pariatur qui ullamco adipisicing in. Voluptate irure reprehenderit dolor dolor nulla proident exercitation incididunt ex fugiat irure enim."
+  },
+  {
+    "id": "6",
+    "name": "Adventures",
+    "icon": "fa-solid fa-person-hiking",
+    "description": "Nostrud voluptate cupidatat cupidatat nisi amet laborum sunt aliqua do in minim. Ullamco Lorem velit aliquip deserunt Lorem. Excepteur proident sint nostrud qui cillum."
+  }
+]
