@@ -6,11 +6,13 @@
   position: absolute;
   top: 0;
   background-color: orange;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .price span {
+  line-height: 30px;
   color: #fff;
-  padding: 8px 18px;
+  padding: 0 18px;
 }
 
 .rating {
@@ -33,4 +35,5 @@
 
 .checkout-btn:hover {
   background-color: #ff7300;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
