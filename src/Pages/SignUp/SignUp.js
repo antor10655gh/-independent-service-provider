@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { sendEmailVerification } from "firebase/auth";
 
 const SignUp = () => {
+  const [agree, setAgree] = useState(false);
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
@@ -36,9 +37,14 @@ const SignUp = () => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    await createUserWithEmailAndPassword(email, password);
-    await sendEmailVerification();
-    toast("Sent email");
+    const confirmPassword = confirmPasswordRef.current.value;
+    if (password !== confirmPassword) {
+      toast("Password Not Matched");
+    } else {
+      await createUserWithEmailAndPassword(email, password);
+      await sendEmailVerification();
+      toast("Sent email");
+    }
   };
 
   return (
@@ -92,7 +98,15 @@ const SignUp = () => {
                   required
                 />
               </Form.Group>
-              <Button className="signUP-btn" type="submit">
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Check
+                  onClick={() => setAgree(!agree)}
+                  type="checkbox"
+                  label="Agree with terms and condition"
+                  className={agree ? "text-primary" : "text-secondary"}
+                />
+              </Form.Group>
+              <Button disabled={!agree} className="signUP-btn" type="submit">
                 Create an account
               </Button>
               <ToastContainer />

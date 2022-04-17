@@ -3,6 +3,7 @@
 }
 
 .form-details input[type="text"],
+input[type="email"],
 input[type="password"] {
   border: none;
   border-radius: 0px;

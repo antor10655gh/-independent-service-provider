@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import {
   useSendPasswordResetEmail,
@@ -12,6 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
+  const [remembers, setRemembers] = useState(false);
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
@@ -79,7 +80,12 @@ const Login = () => {
               </Form.Group>
               <div className="d-flex justify-content-between">
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                  <Form.Check type="checkbox" label="Remember me" />
+                  <Form.Check
+                    onClick={() => setRemembers(!remembers)}
+                    type="checkbox"
+                    label="Remember me"
+                    className={remembers ? "text-primary" : "text-secondary"}
+                  />
                 </Form.Group>
                 <span>
                   <p
