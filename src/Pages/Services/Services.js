@@ -1,10 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useService from "../../hooks/useService/useService";
 import Service from "../Service/Service";
 import "./Services.css";
 
 const Services = () => {
   const [services, setServices] = useService();
+
+  const navigate = useNavigate();
+
+  const handleGetMoreBtn = () => {
+    navigate("/services");
+  };
+
   return (
     <div className="container py-3 py-lg-5">
       <header className="text-center mb-4 mb-lg-5">
@@ -27,7 +35,7 @@ const Services = () => {
       <div className="row pt-5 text-center">
         <div className="col">
           <div className="more-service">
-            <button className="getMore-btn">
+            <button onClick={handleGetMoreBtn} className="getMore-btn">
               <span className="px-2">Get More</span>
               <i class="fa-solid fa-angles-right"></i>
             </button>

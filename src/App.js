@@ -10,6 +10,7 @@ import About from "./Pages/About/About";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 import MainServices from "./Pages/MainServices/MainServices";
+import CheckOut from "./Pages/CheckOut/CheckOut";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/services" element={<MainServices></MainServices>}></Route>
+        <Route
+          path="/checkout/:checkoutId"
+          element={<CheckOut></CheckOut>}
+        ></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
