@@ -1,0 +1,47 @@
+.box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 1rem solid #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.box:hover .content {
+  top: 0;
+}
+
+.box .content h3 {
+  font-size: 2rem;
+  color: #eee;
+  padding-top: 2.8rem;
+}
+
+.box .content p {
+  font-size: 0.5rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+.box .content .seeMore-btn {
+  background-color: orange;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: #eee;
+  transition: 0.5s;
+}
+
+.box .content .seeMore-btn:hover {
+  background-color: rgb(255, 123, 0);
+}
