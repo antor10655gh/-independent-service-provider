@@ -6,8 +6,8 @@ const Service = (props) => {
   const { id, name, price, picture, shortDescription, time } = props.packagee;
   const navigate = useNavigate();
 
-  const handleCheckOut = () => {
-    navigate("/checkout/" + id);
+  const handleCheckOut = (name) => {
+    navigate("/checkout/" + name);
   };
   return (
     <div class="col">
@@ -30,7 +30,7 @@ const Service = (props) => {
           <p class="card-text">{shortDescription}</p>
         </div>
         <div className="checkout-details d-flex justify-content-between align-items-center p-3 pb-4">
-          <button onClick={handleCheckOut} className="checkout-btn">
+          <button onClick={() => handleCheckOut(name)} className="checkout-btn">
             Book Now <i class="fa-regular fa-credit-card"></i>
           </button>
           <div>
