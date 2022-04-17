@@ -22,7 +22,7 @@ const SignUp = () => {
     useCreateUserWithEmailAndPassword(auth);
 
   if (user) {
-    navigate(from, { replace: true });
+    navigate("/home");
   }
 
   const handleSubmitForm = (event) => {

@@ -18,6 +18,10 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
+  if (user) {
+    navigate("/home");
+  }
+
   const handleSignIn = (event) => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;

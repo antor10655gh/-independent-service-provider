@@ -1,44 +1,56 @@
 [
   {
     "id": "1",
-    "name": "Snider",
+    "name": "A weekend in London",
     "price": "$234",
-    "picture": "https://images.unsplash.com/photo-1573259353568-5d8ab9cbc84f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "time": "7 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-07-800x533.jpg",
+    "shortDescription": "Budget Travels, First Minute, Weekend",
     "description": "Proident id esse tempor veniam amet consequat minim tempor ad eu. Velit Lorem Lorem cillum reprehenderit aute irure. Eiusmod dolore magna reprehenderit proident enim qui laboris consectetur esse duis cupidatat sunt voluptate."
   },
   {
     "id": "2",
-    "name": "Buchanan",
+    "name": "Big in Japan",
     "price": "$464",
-    "picture": "https://images.unsplash.com/photo-1573990274312-47aba213213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    "description": "Incididunt mollit aliquip ut nisi id. Sunt cupidatat consectetur ullamco voluptate labore adipisicing magna pariatur aute exercitation labore reprehenderit minim. Minim ipsum reprehenderit sit aliquip quis duis id elit eu fugiat. Commodo excepteur ad voluptate exercitation. Pariatur veniam in quis minim reprehenderit culpa sint sit velit ipsum nulla laboris cupidatat velit. Ullamco consequat nisi sunt consectetur officia ea sunt."
+    "time": "10 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-800x533.jpg",
+    "shortDescription": "Adventure, Family Holidays, Faraway Travels",
+    "description": "Tokyo may be forever reaching into the future but you can still see traces of the shogun’s capital on the kabuki stage, at a sumo tournament or under the cherry blossoms."
   },
   {
     "id": "3",
-    "name": "Yesenia",
+    "name": "Faraway Sydney",
     "price": "$438",
-    "picture": "https://images.unsplash.com/photo-1566873535350-a3f5d4a804b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "time": "7 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-08-800x533.jpg",
+    "shortDescription": "Cruises, Family Holidays, Faraway Travels",
     "description": "Aliquip eu veniam aute culpa dolor officia reprehenderit amet Lorem. Incididunt adipisicing exercitation labore labore esse deserunt. Deserunt do tempor duis aute laboris et reprehenderit excepteur. Dolore sit pariatur elit eu anim aliquip pariatur minim cillum. Exercitation officia labore ullamco Lorem sint aute sunt sint qui. Eu nostrud ad ut quis id nostrud Lorem in ullamco veniam officia."
   },
   {
     "id": "4",
-    "name": "Sampson",
+    "name": "Exciting Belgrade",
     "price": "$496",
-    "picture": "https://images.unsplash.com/photo-1515356619894-b89131037e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    "time": "5 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-800x533.jpg",
+    "shortDescription": "Budget Travels, Family Holidays, Honeymoon and Romancing",
     "description": "Enim sit elit nulla nulla labore aliquip veniam reprehenderit dolor. Ullamco exercitation sit ipsum qui in id enim duis eiusmod reprehenderit reprehenderit qui. Tempor tempor mollit Lorem aute aliquip esse aliqua qui. Deserunt ut voluptate dolore sunt et qui officia cupidatat culpa officia in. Eu amet quis Lorem ipsum cupidatat ut exercitation esse."
   },
   {
     "id": "5",
-    "name": "Wong",
+    "name": "A week in Venice",
     "price": "$355",
-    "picture": "http://placehold.it/32x32https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "description": "Cillum magna amet cillum culpa minim do esse minim elit quis id pariatur. Dolor eu ea quis voluptate. Amet magna sunt laboris Lorem eiusmod est sit et velit reprehenderit occaecat. Sint incididunt dolore commodo dolor tempor. Excepteur labore ad ad incididunt id minim ut ut minim. Mollit est tempor excepteur voluptate do tempor eu adipisicing. Deserunt minim non et ut anim laborum proident cupidatat occaecat eiusmod."
+    "time": "8 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/venice-01-800x533.jpg",
+    "shortDescription": "Backpacking, Festivals, Honeymoon and Romancing",
+    "description": "Garden islands and lagoon aquaculture yield speciality produce and seafood you won’t find elsewhere – all highlighted in inventive Venetian cuisine, with tantalising traces of ancient spice routes. The city knows how to put on a royal spread, as France’s King Henry III once found out when faced with 1200 dishes and 200 bonbons."
   },
   {
     "id": "6",
-    "name": "Stokes",
+    "name": "Sunny Barcelona",
     "price": "$281",
-    "picture": "https://images.unsplash.com/photo-1544939514-aa98d908bc47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "description": "Officia adipisicing enim eiusmod voluptate in laborum eu ipsum ipsum pariatur elit. Non dolor ut aute officia cupidatat consectetur culpa duis dolore laborum Lorem sit quis tempor. Velit quis eiusmod excepteur nulla do aliqua."
+    "time": "7 days",
+    "picture": "http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-barcelona-02-800x533.jpg",
+    "shortDescription": "Backpacking, Budget Travels, Weekend",
+    "description": "Barcelona is an enchanting seaside city with boundless culture, fabled architecture and a world-class drinking and dining scene. Barcelona's architectural treasures span 2000-plus years."
   }
 ]
