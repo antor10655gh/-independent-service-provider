@@ -5,6 +5,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
 import SocialLogin from "./SocialLogin/SocialLogin";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const location = useLocation();
@@ -20,6 +22,10 @@ const Login = () => {
 
   if (user) {
     navigate(from, { replace: true });
+  }
+
+  if (error) {
+    toast(error.message);
   }
 
   const handleSignIn = (event) => {

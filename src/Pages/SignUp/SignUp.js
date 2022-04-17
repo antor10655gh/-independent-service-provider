@@ -5,6 +5,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import SocialLogin from "../Login/SocialLogin/SocialLogin";
 import "./SignUp.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { sendEmailVerification } from "firebase/auth";
 
 const SignUp = () => {
   const location = useLocation();
@@ -19,17 +22,23 @@ const SignUp = () => {
   const confirmPasswordRef = useRef();
 
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   if (user) {
     navigate(from, { replace: true });
   }
 
-  const handleSubmitForm = (event) => {
+  if (error) {
+    toast(error.message);
+  }
+
+  const handleSubmitForm = async (event) => {
+    event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    createUserWithEmailAndPassword(email, password);
-    event.preventDefault();
+    await createUserWithEmailAndPassword(email, password);
+    await sendEmailVerification();
+    toast("Sent email");
   };
 
   return (
@@ -46,7 +55,6 @@ const SignUp = () => {
                   ref={firstNameRef}
                   type="text"
                   placeholder="First name"
-                  required
                 />
               </Form.Group>
 
@@ -55,15 +63,14 @@ const SignUp = () => {
                   ref={lastNameRef}
                   type="text"
                   placeholder="Last name"
-                  required
                 />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Control
                   ref={emailRef}
-                  type="text"
-                  placeholder="Username or Email"
+                  type="email"
+                  placeholder="Email"
                   required
                 />
               </Form.Group>
@@ -88,6 +95,7 @@ const SignUp = () => {
               <Button className="signUP-btn" type="submit">
                 Create an account
               </Button>
+              <ToastContainer />
             </Form>
             <div className="text-center mt-2">
               <span className="me-2">Already have an account?</span>
