@@ -8,10 +8,13 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useLocation, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SocialLogin = () => {
-  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
-  const [signInWithGithub] = useSignInWithGithub(auth);
+  const [signInWithGoogle, user, loading, googleError] =
+    useSignInWithGoogle(auth);
+  const [signInWithGithub, githubError] = useSignInWithGithub(auth);
 
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -20,6 +23,14 @@ const SocialLogin = () => {
 
   if (user) {
     navigate(from, { replace: true });
+  }
+
+  if (googleError || githubError) {
+    toast(googleError?.message);
+  }
+
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
   return (
@@ -39,6 +50,7 @@ const SocialLogin = () => {
           className="w-50"
         ></div>
       </div>
+      <ToastContainer />
       <div>
         <button onClick={() => signInWithGoogle()} className="googleBtn my-2">
           <img src={googleIcon} alt="" />
