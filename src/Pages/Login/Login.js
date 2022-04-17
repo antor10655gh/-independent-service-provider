@@ -19,7 +19,7 @@ const Login = () => {
     useSignInWithEmailAndPassword(auth);
 
   if (user) {
-    navigate("/home");
+    navigate(from, { replace: true });
   }
 
   const handleSignIn = (event) => {
