@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
@@ -20,6 +23,8 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
   if (user) {
     navigate(from, { replace: true });
   }
@@ -34,6 +39,16 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
 
     event.preventDefault();
+  };
+
+  const forgetHandle = async () => {
+    const email = emailRef.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Sent Email");
+    } else {
+      toast("Please enter your email");
+    }
   };
 
   return (
@@ -67,9 +82,9 @@ const Login = () => {
                   <Form.Check type="checkbox" label="Remember me" />
                 </Form.Group>
                 <span>
-                  <Link style={{ color: "orange" }} to="/">
+                  <p onClick={forgetHandle} style={{ color: "orange" }}>
                     Forget Password
-                  </Link>
+                  </p>
                 </span>
               </div>
               <Button className="login-btn" type="submit">
