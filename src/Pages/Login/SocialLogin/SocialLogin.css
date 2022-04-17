@@ -10,11 +10,11 @@
 }
 
 .googleBtn:hover {
-  background-color: #e47657;
-  border: 1px solid #e47657;
+  background-color: orange;
+  border: 1px solid orange;
   color: aliceblue;
 }
 
 .googleBtn:focus {
-  background-color: #e47657;
+  background-color: orange;
 }

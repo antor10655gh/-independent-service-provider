@@ -7,10 +7,21 @@ import {
   useSignInWithGithub,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
   const [signInWithGoogle, user] = useSignInWithGoogle(auth);
   const [signInWithGithub] = useSignInWithGithub(auth);
+
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
+  const navigate = useNavigate();
+
+  if (user) {
+    navigate(from, { replace: true });
+  }
+
   return (
     <div className="my-3 text-center">
       <div className="d-flex align-items-center">

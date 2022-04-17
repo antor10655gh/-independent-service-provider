@@ -1,3 +1,23 @@
+#login-btn {
+  background-color: orange;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 18px;
+  text-align: center;
+}
+
+#login-btn:hover {
+  background-color: #ff7300;
+}
+
+#login-btn:focus {
+  background-color: #ff7300;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .logOut-btn {
   background-color: orange;
   border: none;

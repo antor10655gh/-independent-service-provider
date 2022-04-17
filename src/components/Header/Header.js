@@ -43,15 +43,15 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link className="pe-lg-3" as={Link} to="/about">
                 About
               </Nav.Link>
               {user ? (
-                <Button onClick={handleSignOut} className="logOut-btn ms-lg-3">
+                <Button onClick={handleSignOut} className="logOut-btn">
                   Log Out
                 </Button>
               ) : (
-                <Nav.Link eventKey={2} as={Link} to="/login">
+                <Nav.Link id="login-btn" eventKey={2} as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}

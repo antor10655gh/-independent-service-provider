@@ -46,6 +46,7 @@ const SignUp = () => {
                   ref={firstNameRef}
                   type="text"
                   placeholder="First name"
+                  required
                 />
               </Form.Group>
 
@@ -54,6 +55,7 @@ const SignUp = () => {
                   ref={lastNameRef}
                   type="text"
                   placeholder="Last name"
+                  required
                 />
               </Form.Group>
 
@@ -62,6 +64,7 @@ const SignUp = () => {
                   ref={emailRef}
                   type="text"
                   placeholder="Username or Email"
+                  required
                 />
               </Form.Group>
 
@@ -70,6 +73,7 @@ const SignUp = () => {
                   ref={passwordRef}
                   type="password"
                   placeholder="Password"
+                  required
                 />
               </Form.Group>
 
@@ -78,6 +82,7 @@ const SignUp = () => {
                   ref={confirmPasswordRef}
                   type="password"
                   placeholder="Confirm Password"
+                  required
                 />
               </Form.Group>
               <Button className="signUP-btn" type="submit">

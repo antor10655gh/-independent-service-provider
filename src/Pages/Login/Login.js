@@ -44,6 +44,7 @@ const Login = () => {
                   ref={emailRef}
                   type="text"
                   placeholder="Username or Email"
+                  required
                 />
               </Form.Group>
 
@@ -52,6 +53,7 @@ const Login = () => {
                   ref={passwordRef}
                   type="password"
                   placeholder="Password"
+                  required
                 />
               </Form.Group>
               <div className="d-flex justify-content-between">
