@@ -14,6 +14,7 @@ import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import Blog1 from "./Pages/Blog/Blog1/Blog1";
 import Blog2 from "./Pages/Blog/Blog2/Blog2";
 import Blog3 from "./Pages/Blog/Blog3/Blog3";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

@@ -17,7 +17,7 @@ const About = () => {
           </div>
           <div className="col-lg-7">
             <div className="about-details p-4">
-              <h1>About Me</h1>
+              <h1>AM ANTOR</h1>
               <h3>
                 Designer & <span style={{ color: "orange" }}>Developer</span>
               </h3>
