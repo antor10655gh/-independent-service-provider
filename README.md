@@ -8,41 +8,41 @@ There are some components and pages which are is use in my project:
 
 ### `Components`
 
-# 1.Header
+#### 1.Header
 
-# 2.Footer
+#### 2.Footer
 
-# 3.Banner
+#### 3.Banner
 
-# 4.Hero
+#### 4.Hero
 
-# 5.NotFound
+#### 5.NotFound
 
 ### `Pages`
 
-# 1.Home
+#### 1.Home
 
-# 2.Services
+#### 2.Services
 
-# 3.Blog
+#### 3.Blog
 
-# 4.Contact
+#### 4.Contact
 
-# 5.About
+#### 5.About
 
-# 6.Login
+#### 6.Login
 
-# 7.SignUp
+#### 7.SignUp
 
-# 8.Reviews
+#### 8.Reviews
 
-# 9.CheckOut
+#### 9.CheckOut
 
-# 10.Gallery
+#### 10.Gallery
 
-# 11.MainService
+#### 11.MainService
 
-# 12.ExtraService
+#### 12.ExtraService
 
 ### `npm run build`
 
