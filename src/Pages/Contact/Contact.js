@@ -18,12 +18,12 @@ const Contact = () => {
         ></div>
       </header>
       <div className="row row-cols-1 row-cols-lg-2">
-        <div className="col-5">
+        <div className="col-lg-5">
           <div className="contact-banner">
             <img className="img-fluid" src={ContactImg} alt="" />
           </div>
         </div>
-        <div className="col-7">
+        <div className="col-lg-7">
           <div className="contact-form">
             <form action="">
               <div className="inputBox">
