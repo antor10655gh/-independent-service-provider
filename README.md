@@ -44,6 +44,16 @@ There are some components and pages which are is use in my project:
 
 #### 12.ExtraService
 
+### `Additional Information`
+
+Use some authentication system ----
+
+#### Email & Password Authentication
+
+#### GoogleSignIn
+
+#### GithubSignIn
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
