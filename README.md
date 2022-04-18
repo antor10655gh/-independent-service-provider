@@ -1,23 +1,33 @@
-# Getting Started with Create React App
+# Trawell Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+There are some components and pages which are is use in my project:
 
-### `npm start`
+### `Components`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.Header
+2.Footer
+3.Banner
+4.Hero
+5.NotFound
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Pages`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.Home
+2.Services
+3.Blog
+4.Contact
+5.About
+6.Login
+7.SignUp
+8.Reviews
+9.CheckOut
+10.Gallery
+11.MainService
+12.ExtraService
 
 ### `npm run build`
 
@@ -65,6 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### `Contact With Me`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want to contact with me: [https://antor10655gh.github.io/antorfoolio.github.io/](https://antor10655gh.github.io/antorfoolio.github.io/)
