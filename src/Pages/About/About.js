@@ -8,7 +8,7 @@ const About = () => {
       style={{ background: "#e2e2e2" }}
       className="container-fluid p-3 p-lg-5"
     >
-      <div className="container p-5">
+      <div className="container p-1 p-lg-5">
         <div className="row row-cols-1 row-cols-lg-2">
           <div className="col-lg-5">
             <div className="about-banner">
