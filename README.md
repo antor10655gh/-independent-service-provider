@@ -2,7 +2,7 @@
 
 Live site Link [https://trawell-project-fb6da.firebaseapp.com/](https://trawell-project-fb6da.firebaseapp.com/).
 
-### Some Classification of this project--
+### Some Information of this project--
 
 #### 1.This is travel service website where people can buy travel packages.
 
